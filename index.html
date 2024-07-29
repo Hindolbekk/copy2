@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		<meta name="author" content="MIMAX SOFTWARE GROUP">
+		<meta name="robots" content="noindex, nofollow">
+		<title>INVENTAR.UZ</title>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+		<!-- Datetimepicker CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+		<!-- animation CSS -->
+		<link rel="stylesheet" href="assets/css/animate.css">
+
+		<!-- Select2 CSS -->
+		<link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+		<!-- Fontawesome CSS -->
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+
+	</head>
+
+	<body>
+		<div id="global-loader">
+			<div class="whirly-loader"> </div>
+		</div>
+		<!-- Main Wrapper -->
+		<div class="main-wrapper">
+			<!-- Header -->
+			<div class="header">
+				<!-- Logo -->
+				<div class="header-left active">
+					<a href="index.html" class="logo logo-white">
+						<img src="assets/img/logo/logo-white.png" alt="">
+					</a>
+					<a href="index.html" class="logo-small">
+						<img src="assets/img/logo/logo-small.png" alt="">
+					</a>
+					<a id="toggle_btn" href="javascript:void(0);">
+						<i data-feather="chevrons-left" class="feather-16"></i>
+					</a>
+				</div>
+				<!-- /Logo -->
+			
+				<a id="mobile_btn" class="mobile_btn" href="#sidebar">
+					<span class="bar-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+			
+				<!-- Header Menu -->
+				<ul class="nav user-menu">
+			
+					<!-- Flag -->
+					<li class="nav-item dropdown has-arrow flag-nav nav-item-box">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0);" role="button">
+							<img src="assets/img/flags/uz.png" alt="Language" class="img-fluid">
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a href="javascript:void(0);" class="dropdown-item active">
+								<img src="assets/img/flags/uz.png" alt="" height="16"> O'zbekcha
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="assets/img/flags/ru.png" alt="" height="16"> Russian
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="assets/img/flags/us.png" alt="" height="16"> English
+							</a>
+						</div>
+					</li>
+					<!-- /Flag -->
+			
+					<li class="nav-item nav-item-box">
+						<a href="javascript:void(0);" id="btnFullscreen">
+							<i data-feather="maximize"></i>
+						</a>
+					</li>
+					<!-- Notifications -->
+					<li class="nav-item dropdown nav-item-box">
+						<a href="javascript:void(0);" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+							<i data-feather="bell"></i><span class="badge rounded-pill">2</span>
+						</a>
+						<div class="dropdown-menu notifications">
+							<div class="topnav-dropdown-header">
+								<span class="notification-title">Bildirishnomalar</span>
+								<a href="javascript:void(0)" class="clear-noti"> Barchasini tozalash </a>
+							</div>
+							<div class="noti-content">
+								<ul class="notification-list">
+									<li class="notification-message">
+										<a href="activities.html">
+											<div class="media d-flex">
+												<span class="avatar flex-shrink-0">
+													<img alt="" src="assets/img/profiles/avatar-02.jpg">
+												</span>
+												<div class="media-body flex-grow-1">
+													<p class="noti-details"><span class="noti-title">John Doe</span> yangi talabnoma yubordi <span class="noti-title">Loyiha boshqaruvi va texnologiya tranferi bo'limi</span></p>
+													<p class="noti-time"><span class="notification-time">4 daqiqa avval</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="topnav-dropdown-footer">
+								<a href="activities.html">Barcha bildirishnomalar</a>
+							</div>
+						</div>
+					</li>
+					<!-- /Notifications -->
+			
+					<li class="nav-item dropdown has-arrow main-drop">
+						<a href="javascript:void(0);" class="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
+							<span class="user-info">
+								<span class="user-letter">
+									<img src="assets/img/profiles/avator1.jpg" alt="" class="img-fluid">
+								</span>
+								<span class="user-detail">
+									<span class="user-name">Eshonov Muhammadali</span>
+									<span class="user-role">Omborchi</span>
+								</span>
+							</span>
+						</a>
+						<div class="dropdown-menu menu-drop-user">
+							<div class="profilename">
+								<hr class="m-0">
+								<a class="dropdown-item" href="profile.html"> <i class="me-2" data-feather="user"></i> Profil</a>
+								<a class="dropdown-item" href="general-settings.html"><i class="me-2" data-feather="settings"></i>Profil sozlamlari</a>
+								<hr class="m-0">
+								<a class="dropdown-item logout pb-0" href="signin.html">
+									<img src="assets/img/icons/log-out.svg" class="me-2" alt="img">Chiqish
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<!-- /Header Menu -->
+			
+				<!-- Mobile Menu -->
+				<div class="dropdown mobile-user-menu">
+					<a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="profile.html">Profil</a>
+						<a class="dropdown-item" href="general-settings.html">Profil sozlamalar</a>
+						<a class="dropdown-item" href="signin.html">Chiqish</a>
+					</div>
+				</div>
+				<!-- /Mobile Menu -->
+			</div>
+			<!-- /Header -->
+			<!-- Sidebar -->
+			<div class="sidebar" id="sidebar">
+				<div class="sidebar-inner slimscroll">
+					<div id="sidebar-menu" class="sidebar-menu">
+						<ul>
+							<li class="submenu-open">
+								<h6 class="submenu-hdr"></h6>
+								<ul>
+									<li class="active"><a href="index.html"><i data-feather="grid"></i><span>Бош саҳифа</span></a></li>
+								</ul>
+							</li>
+			
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">Навбатчилик</h6>
+								<ul>
+									<li><a href="contracts.html"><i data-feather="shopping-bag"></i><span>Тўсиб ушлаш тезкор <br>режаси</span></a></li>
+									<li><a href="product-list.html"><i data-feather="box"></i><span>Қурол қабул қилиш <br> ва топшириш</span></a></li>
+									<li><a href="weapon-activity.html"><i data-feather="codepen"></i><span>Навбатчилик қисми</span></a></li>
+								</ul>
+							</li>
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">Тизим бошқаруви</h6>
+								<ul>
+									<li class="submenu">
+										<a href="javascript:void(0);"><i data-feather="map"></i><span>Ҳудудлар бошқаруви</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="regions-list.html">Вилоятлар</a></li>
+											<li><a href="districts-list.html">Туманлар</a></li>
+										</ul>
+									</li>
+									<li class="submenu">
+										<a href="javascript:void(0);"><i data-feather="grid"></i><span>Таркибий тузилма</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="orgens-list.html">ИИБ/ИИВ лар рўйхати</a></li>
+										</ul>
+									</li>
+									<li class="submenu">
+										<a href="javascript:void(0);"><i data-feather="users"></i><span>Фойдаланувчилар</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="roles-list.html">Лавозимлар рўйхати</a></li>
+											<li><a href="positions-list.html">Унвонлар рўйхати</a></li>
+											<li><a href="personnel-list.html">Ходим маълумотлари</a></li>
+										</ul>
+									</li>
+									<li class="submenu">
+										<a href="javascript:void(0);"><i data-feather="shield"></i><span>Қурол аслаҳалар</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="weapon-types-list.html">Қурол аслаҳа турлари</a></li>
+											<li><a href="weapons-list.html">Қурол аслаҳалар рўйхати</a></li>
+											<li><a href="weapon-emp-list.html">Сейф рақами</a></li>
+										</ul>
+									</li>
+									<!-- <li><a href="index.html"><i data-feather="users"></i><span>Ходимлар рўйхати</span></a></li> -->
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- /Sidebar -->
+
+			<div class="page-wrapper">
+				<div class="content">
+					<div class="row">
+
+						<div class="col-xl-3 col-sm-6 col-12 d-flex">
+							<div class="dash-count">
+								<div class="dash-counts">
+									<h4>100</h4>
+									<h5>Жами аризалар</h5>
+								</div>
+								<div class="dash-imgs">
+									<i data-feather="inbox"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 col-12 d-flex">
+							<div class="dash-count das1">
+								<div class="dash-counts">
+									<h4>90</h4>
+									<h5>Якунланган аризалар</h5>
+								</div>
+								<div class="dash-imgs">
+									<i data-feather="user-check"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 col-12 d-flex">
+							<div class="dash-count das2">
+								<div class="dash-counts">
+									<h4>10</h4>
+									<h5>Жараёндаги аризалар</h5>
+								</div>
+								<div class="dash-imgs">
+									<i data-feather="activity"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 col-12 d-flex">
+							<div class="dash-count das3">
+								<div class="dash-counts">
+									<h4>170</h4>
+									<h5>Жами қурол аслаҳалар</h5>
+								</div>
+								<div class="dash-imgs">
+									<i data-feather="clipboard"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Button trigger modal -->
+
+					<div class="row">
+						<!-- Chart -->
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Аризалар ҳолати бўйича статистика</h5>
+								</div>
+								<div class="card-body">
+									<div id="donut-chart" class="chart-set"></div>
+								</div>
+							</div>
+						</div>
+						<!-- /Chart -->
+						<div class="col-xl-5 col-sm-12 col-12 d-flex">
+							<div class="card flex-fill default-cover mb-4">
+								<div class="card-header d-flex justify-content-between align-items-center">
+									<h4 class="card-title mb-0">Янги аризалар</h4>
+									<div class="view-all-link">
+										<a href="javascript:void(0);" class="view-all d-flex align-items-center">
+											Барчасини кўриш<span class="ps-2 d-flex align-items-center"><i data-feather="arrow-right" class="feather-16"></i></span>
+										</a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="table-responsive dataview">
+										<table class="table dashboard-recent-products">
+											<thead>
+												<tr>
+													<th>#</th>
+													<th>Вилоят/Туман</th>
+													<th>Вақти</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>112</td>
+													<td class="productimgname">
+														Тошкент вилояти/Чилонзор тумани
+													</td>
+													<td>01.01.2024</td>
+												</tr>
+												<tr>
+													<td>112</td>
+													<td class="productimgname">
+														Тошкент вилояти/Чилонзор тумани
+													</td>
+													<td>01.01.2024</td>
+												</tr>
+												<tr>
+													<td>112</td>
+													<td class="productimgname">
+														Тошкент вилояти/Чилонзор тумани
+													</td>
+													<td>01.01.2024</td>
+												</tr>
+												<tr>
+													<td>112</td>
+													<td class="productimgname">
+														Тошкент вилояти/Чилонзор тумани
+													</td>
+													<td>01.01.2024</td>
+												</tr>
+												<tr>
+													<td>112</td>
+													<td class="productimgname">
+														Тошкент вилояти/Чилонзор тумани
+													</td>
+													<td>01.01.2024</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<h4 class="card-title">Тасиқлаш кутилаётган аризалар</h4>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive dataview">
+								<table class="table dashboard-expired-products">
+									<thead>
+										<tr>
+											<th class="no-sort">
+												<label class="checkboxs">
+													<input type="checkbox" id="select-all">
+													<span class="checkmarks"></span>
+												</label>
+											</th>
+											<th>Ариза рақами</th>
+											<th>Вилоят/Туман</th>
+											<th>Ариза ҳолати</th>
+											<th>Вақти</th>
+											<th>Навбатчи</th>
+											<th class="no-sort"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<label class="checkboxs">
+													<input type="checkbox">
+													<span class="checkmarks"></span>
+												</label>
+											</td>
+											<td>123</td>
+											<td><a href="districts-list.html">Қорақалпоғистон Республикаси/Чимбой тумани</a></td>
+											<td><span class="badge badge-linedanger">Тасдиқлаш кутилмоқда</span></td>
+											<td>23.05.2024 | 10:00</td>
+											<td>Эшонов Эшмат</td>
+											<td class="action-table-data">
+												<div class="edit-delete-action">
+													<a class="me-2 p-2" href="#">
+														<i data-feather="edit" class="feather-edit"></i>
+													</a>
+													<a class=" confirm-text p-2" href="javascript:void(0);">
+														<i data-feather="trash-2" class="feather-trash-2"></i>
+													</a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="checkboxs">
+													<input type="checkbox">
+													<span class="checkmarks"></span>
+												</label>
+											</td>
+											<td>123</td>
+											<td><a href="districts-list.html">Қорақалпоғистон Республикаси/Чимбой тумани</a></td>
+											<td><span class="badge badge-linedanger">Тасдиқлаш кутилмоқда</span></td>
+											<td>23.05.2024 | 10:00</td>
+											<td>Эшонов Эшмат</td>
+											<td class="action-table-data">
+												<div class="edit-delete-action">
+													<a class="me-2 p-2" href="#">
+														<i data-feather="edit" class="feather-edit"></i>
+													</a>
+													<a class=" confirm-text p-2" href="javascript:void(0);">
+														<i data-feather="trash-2" class="feather-trash-2"></i>
+													</a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="checkboxs">
+													<input type="checkbox">
+													<span class="checkmarks"></span>
+												</label>
+											</td>
+											<td>123</td>
+											<td><a href="districts-list.html">Қорақалпоғистон Республикаси/Чимбой тумани</a></td>
+											<td><span class="badge badge-linedanger">Тасдиқлаш кутилмоқда</span></td>
+											<td>23.05.2024 | 10:00</td>
+											<td>Эшонов Эшмат</td>
+											<td class="action-table-data">
+												<div class="edit-delete-action">
+													<a class="me-2 p-2" href="#">
+														<i data-feather="edit" class="feather-edit"></i>
+													</a>
+													<a class=" confirm-text p-2" href="javascript:void(0);">
+														<i data-feather="trash-2" class="feather-trash-2"></i>
+													</a>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- /Main Wrapper -->
+
+		<!-- jQuery -->
+		<script src="assets/js/jquery-3.7.1.min.js"></script>
+
+		<!-- Feather Icon JS -->
+		<script src="assets/js/feather.min.js"></script>
+
+		<!-- Slimscroll JS -->
+		<script src="assets/js/jquery.slimscroll.min.js"></script>
+
+		<!-- Bootstrap Core JS -->
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Chart JS -->
+		<script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+		<script src="assets/plugins/apexchart/chart-data.js"></script>
+
+		<!-- Sweetalert 2 -->
+		<script src="assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
+		<script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="assets/js/theme-script.js"></script>
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
